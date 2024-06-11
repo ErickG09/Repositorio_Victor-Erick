@@ -63,3 +63,16 @@ ul {
 .content-section {
     margin-bottom: 40px;
 }
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the images with minimal space */
+    gap: 10px; /* Adds a small gap between the images */
+    align-items: center; /* Aligns the images vertically in the center */
+}
+
+.image-container img {
+    max-width: 45%; /* Ensures the images fit within the container */
+    height: auto; /* Maintains the aspect ratio of the images */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better aesthetics */
+}
