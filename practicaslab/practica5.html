@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes digitales - Victor & Erick</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portafolio web - Redes digitales de datos y Laboratorio.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Informacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de nosotros</a>
+
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+ 
+    <!-- Main content -->
+    <h1>Práctica: Node MCU ESP32 – Sensores Digitales, Analógicos e Inteligentes</h1>
+    <h2>Resumen</h1>
+    <p>En esta práctica, buscamos conocer y comprobar el funcionamiento de diversos sensores conectados al módulo NodeMCU ESP32. Los sensores utilizados incluyen un botón (sensor digital), un potenciómetro (sensor analógico) y un DHT22 (sensor inteligente). Además, configuraremos el entorno de VOKWI para realizar simulaciones y programaremos el NodeMCU ESP32 utilizando el IDE de Arduino para validar el funcionamiento de los sensores en un entorno real.</p>
+    <h2>Introducción</h2>
+    <p>La tecnología de sensores es fundamental en la construcción de proyectos de electrónica y automatización. En esta práctica, nos enfocaremos en el uso del módulo NodeMCU ESP32 para interactuar con diferentes tipos de sensores. Configuraremos un entorno de simulación en WOKWI y realizaremos pruebas con sensores digitales, analógicos e inteligentes. Luego, trasladaremos estos conocimientos a un entorno real utilizando el IDE de Arduino para programar y verificar el funcionamiento de los sensores con un NodeMCU ESP32 real.</p>
+    <h2>Materiales</h2>
+    <ul>
+        <li>Node MCU ESP32</li>
+        <li>LED, resistencia de 220 Ohms</li>
+        <li>Botón y resistencia de 1K Ohm</li>
+        <li>Sensores: Potenciómetro, DHT22, PIR</li>
+        <li>Protoboard y cables</li>
+        <li>Wokwi</li>
+        <li>Arduino IDE</li>
+    </ul>
+    <h2>Desarrollo</h2>
+    <h3>Objetivo General</h3>
+    <p>Conocer, identificar y comprobar el funcionamiento de los sensores digitales, analógicos e inteligentes en el módulo NodeMCU ESP32.</p>
+
+    <h3>Objetivos específicos</h3>
+    <ul>
+        <li>Utilizando la información e instrucciones de la presentación, configurar el entorno de VOKWI y probar los 3 ejemplos de sensores: Sensor digital (botón), Sensor Analógico (Potenciómetro) y Sensor Inteligente (DHT11).</li>
+        <li>Desarrollar un programa de monitoreo de un sensor digital PIR, basándote en el ejemplo y la documentación del sensor: <a href="https://docs.wokwi.com/parts/wokwi-pir-motion-sensor">https://docs.wokwi.com/parts/wokwi-pir-motion-sensor</a>.</li>
+        <li>Desarrollar un programa de monitoreo de un sensor analógico “Slide Potentiometer”, basándote en el ejemplo y la documentación del sensor: <a href="https://docs.wokwi.com/parts/wokwi-slide-potentiometer">https://docs.wokwi.com/parts/wokwi-slide-potentiometer</a>.</li>
+        <li>Desarrollar un programa con un nuevo sensor inteligente que utilice una librería externa.</li>
+        <li>Utilizando la información de la siguiente liga, configurar el IDE de Arduino para poder programar el NodeMCU directamente desde el entorno de Arduino, instalando las herramientas necesarias. Realiza los mismos objetivos específicos del simulador, utilizando un NodeMCU ESP32 real. <a href="https://randomnerdtutorials.com/getting-started-with-esp32/">https://randomnerdtutorials.com/getting-started-with-esp32/</a></li>
+    </ul>
+    <h2>Resultados</h2>
+    <h3>Ejercicios en WOKWI</h3>
+    <h4>Sensores digitales</h4>
+    <p>Iniciamos probando un botón, la conexión fue sencilla, utilizamos los pines 33 y 32 para conectar el botón y un led. Cada vez que presionamos el botón, el led se enciende.</p>
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica5/wokwi_boton.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <p>Para el siguiente ejercicio usamos un sensor PIR, que es un seno</p>
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica5/wokwi_pir.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica5/wokwi_ir.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <h4>Sensores analógicos</h4>
+
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica5/wokwi_potenciometro.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica5/wokwi_slide_potenciometro.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica5/wokwi_ldr.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <h4>Sensores inteligentes</h4>
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica5/wokwi_dht22.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <h3>Ejercicios en físico</h3>
+    <h4>Botón</h4>
+    <p>El siguiente video muestra como funciona un botón, para corroborar si sirve utilizamos un led, cada vez que el presionamos el botón, el led se enciende.</p>
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica5/fisico_boton.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h4>Potenciometro</h4>
+    <p>El video de abajo muestra el funcionamiento de un potenciometro, para ver el valor que arroja utilizamos el monitor serial y usamos un led, cuando el valor es igual o mayor a 2048
+        el led encenderá. 
+    </p>
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica5/fisico_potenciometro.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h4>Sensor dht22</h4>
+    <p>Por último, el siguiente video muestra el funcioamiento de un sensor inteligente, utilizamos un sensor DHT22, este sensor mide la temperatura y humedad del ambiente. Utilizamos el monitor serial
+        para revisar los datos que está percibiendo el sensor.
+    </p>
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica5/fisico_dht22.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+
+    <h2>Conclusiones</h2>
+    <p>A lo largo de esta práctica, logramos familiarizarnos con el uso del NodeMCU ESP32 y la integración de diversos sensores. La simulación en VOKWI nos permitió entender el comportamiento de los sensores antes de implementarlos en un entorno real. Posteriormente, al configurar el IDE de Arduino y programar el NodeMCU ESP32, pudimos validar la funcionalidad de los sensores y su aplicación en proyectos de electrónica. Esta experiencia nos ha proporcionado una base sólida para futuros proyectos de automatización y control utilizando el NodeMCU ESP32.</p>
+    <h2>Referencias</h2>
+    <p>No hay referencias</p>
+    <h2>Descargables</h2>
+    <p>No hay descargables</p>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
