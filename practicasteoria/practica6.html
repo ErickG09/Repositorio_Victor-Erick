@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes digitales - Victor & Erick</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portafolio web - Redes digitales de datos y Laboratorio.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Informacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../acercadenosotros.html">Acerca de nosotros</a>
+
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+ 
+    <!-- Main content -->
+    <h1>Práctica: Investigación de <b>JavaScript</b></h1><br>
+    <h2>Resumen</h2>
+    <p>En esta practica/investigación se empezó a revisar el uso de <b>JavaScript</b>, mismo que fucionan para paginas web y dan ciertas interacciones.</p>
+    <h2>Herramientas</h2>
+    <ul>
+        <li><a href="https://replit.com/">replit.com</a></li>
+        <li>Investigacionas por internet</li>
+    </ul>
+    <h2>Desarrollo</h2><br>
+    
+    <h3>Objetivo General</h3>
+    <p>Obtener conocimientos basicos de JavaScript y php.</p>
+
+
+    <h3>JavaScript</h3><br>
+    <p>En esta sección se encuentra toda la información sobre JavaScript</p>
+    <h4>¿Qué hace la etiqueta input de HTML y cómo se utilizan?</h4>
+    <p>La etiqueta <code>&lt;input&gt;</code> se utiliza en HTML para crear controles interactivos en un formulario web que permiten al usuario ingresar datos. Estos controles pueden ser de varios tipos, como texto, contraseñas, botones de radio, casillas de verificación, entre otros.</p>
+
+    <h4>Desarrolla en tu página web un ejemplo de un formulario utilizando la etiqueta input.</h4>
+    <p>Un formulario utilizando etiquetas inputs quedaría de la siguiente manera: <a href="../assets/teoria/practica6/ejemploform.html">Click aqui.</a>
+        <br>
+    El codigo de ese formulario es el siguiente:
+        <pre>
+            <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="es"&gt;
+    &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Formulario de Ejemplo&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;Formulario de Ejemplo&lt;/h1&gt;
+    &lt;form action="/submit" method="post"&gt;
+        &lt;label for="name"&gt;Nombre:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" required&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="email"&gt;Correo Electrónico:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="password"&gt;Contraseña:&lt;/label&gt;
+        &lt;input type="password" id="password" name="password" required&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="dob"&gt;Fecha de Nacimiento:&lt;/label&gt;
+        &lt;input type="date" id="dob" name="dob"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="color"&gt;Color Favorito:&lt;/label&gt;
+        &lt;input type="color" id="color" name="color"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="file"&gt;Subir Archivo:&lt;/label&gt;
+        &lt;input type="file" id="file" name="file"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="website"&gt;Página Web:&lt;/label&gt;
+        &lt;input type="url" id="website" name="website"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label&gt;Género:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="radio" id="male" name="gender" value="male"&gt;
+        &lt;label for="male"&gt;Masculino&lt;/label&gt;&lt;br&gt;
+        &lt;input type="radio" id="female" name="gender" value="female"&gt;
+        &lt;label for="female"&gt;Femenino&lt;/label&gt;&lt;br&gt;
+        
+        &lt;label&gt;Hobbies:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="checkbox" id="hobby1" name="hobby" value="reading"&gt;
+        &lt;label for="hobby1"&gt;Leer&lt;/label&gt;&lt;br&gt;
+        &lt;input type="checkbox" id="hobby2" name="hobby" value="traveling"&gt;
+        &lt;label for="hobby2"&gt;Viajar&lt;/label&gt;&lt;br&gt;
+        
+        &lt;input type="submit" value="Enviar"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </p>
+    
+
+    <h4>Desarrolla en tu página web un muestrario de al menos 10 tipos de inputs diferentes.</h4>
+    <p>Para ver la pagina de este muestrario, dar click <a href="../assets/teoria/practica6/ejemploinputs.html">aqui.</a>
+        <pre>
+            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Muestrario de Inputs&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Muestrario de Inputs&lt;/h1&gt;
+    &lt;form&gt;
+        &lt;label for="text"&gt;Texto:&lt;/label&gt;
+        &lt;input type="text" id="text" name="text"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="password"&gt;Contraseña:&lt;/label&gt;
+        &lt;input type="password" id="password" name="password"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="email"&gt;Correo Electrónico:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="number"&gt;Número:&lt;/label&gt;
+        &lt;input type="number" id="number" name="number"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="tel"&gt;Teléfono:&lt;/label&gt;
+        &lt;input type="tel" id="tel" name="tel"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="range"&gt;Rango:&lt;/label&gt;
+        &lt;input type="range" id="range" name="range"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="url"&gt;URL:&lt;/label&gt;
+        &lt;input type="url" id="url" name="url"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="color"&gt;Color:&lt;/label&gt;
+        &lt;input type="color" id="color" name="color"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="date"&gt;Fecha:&lt;/label&gt;
+        &lt;input type="date" id="date" name="date"&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="datetime-local"&gt;Fecha y Hora:&lt;/label&gt;
+        &lt;input type="datetime-local" id="datetime-local" name="datetime-local"&gt;&lt;br&gt;&lt;br&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </p>
+
+    <h4>¿Qué es el lenguaje JavaScript?</h4>
+    <p>JavaScript (JS) es un lenguaje de programación interpretado que se utiliza principalmente para crear contenido web interactivo.</p>
+
+    <h4>¿Para qué sirve el lenguaje JS?</h4>
+    <p>JavaScript se utiliza para manipular el DOM, validar formularios, crear animaciones, y realizar solicitudes de red en segundo plano (AJAX) para actualizar partes de la página sin recargarla completamente.</p>
+
+    <h4>¿A qué se refiere el DOM (Document Object Model) en el desarrollo Web?</h4>
+    <p>El DOM (Document Object Model) es una interfaz de programación que representa el documento HTML o XML como una estructura de árbol, donde cada nodo es un objeto que representa una parte del documento. Esto permite a los lenguajes de programación como JavaScript acceder y manipular el contenido, la estructura y el estilo del documento de manera dinámica.</p>
+
+    <h4>¿Cuál es la diferencia entre los archivos HTML, CSS y JS?</h4>
+    <p>HTML (HyperText Markup Language) define la estructura y el contenido de la página web. CSS (Cascading Style Sheets) controla la presentación y el diseño visual de la página web. JS (JavaScript) agrega interactividad y comportamiento dinámico a la página web.</p>
+
+    <h4>¿Para qué sirve la etiqueta &lt;script&gt;?</h4>
+    <p>La etiqueta &lt;script&gt; se utiliza en HTML para incluir y ejecutar código JavaScript. Puede estar dentro del documento HTML o enlazarse a un archivo externo.</p>
+
+    <h4>¿En qué consisten los 3 métodos para cambiar elementos tipo Tag Name, ID y Class Name con JS?</h4>
+    <p>1. Por Tag Name: <code>document.getElementsByTagName('tagname')</code><br>
+    2. Por ID: <code>document.getElementById('id')</code><br>
+    3. Por Class Name: <code>document.getElementsByClassName('classname')</code></p>
+
+    <h4>Elabora en Replit un programa básico “Hola mundo” con JS, describe el funcionamiento y elementos utilizados.</h4>
+    <p>El link hacía el replit, se encuentra <a href="https://replit.com/@yumnology/investigacionredes#index.html">aqui.</a>
+        <!-- <iframe height="300" width="300" src="https://replit.com/@yumnology/investigacionredes#index.html"></iframe> -->
+        <img src="../assets/teoria/practica6/imagenes/hello_worldjs.png" alt="Imagen 1" width="70%">
+    <br>
+    A continuación se presentan los codigos:
+        <pre>
+            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;title&gt;Hola Mundo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 id="test"&gt;Hola mundo&lt;/h1&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </p>
+    <p>El archivo HTML contiene una estructura básica con un elemento <code>&lt;h1&gt;</code> que tiene el id "greeting" y una etiqueta <code>&lt;script&gt;</code> que enlaza un archivo JavaScript externo llamado "script.js".</p>
+    <p>El archivo JavaScript ("script.js") contiene el siguiente código:</p>
+    <p>
+        <pre>
+            <code>
+document.getElementById('test').innerText = 'Hola Mundo JS';
+            </code>
+        </pre>
+    </p>
+    <p>Este código JavaScript selecciona el elemento con el id "test" y cambia su texto a "Hola mundo JS".</p>
+    <img src="../assets/teoria/practica6/imagenes/resultjs.png" alt="Imagen 1" width="70%">
+
+    <h4>¿Cuál es la sintaxis de la programación en JS?</h4>
+    <p>La sintaxis de JavaScript incluye la declaración de variables, funciones, condicionales, bucles y otros elementos. Aquí algunos ejemplos:</p>
+    <p>
+        <pre>
+            <code>
+// Declaración de variables
+var variable1;
+let variable2;
+const variable3 = 'valor';
+
+// Declaración de funciones
+function miFuncion() {
+    // código de la función
+}
+
+// Llamada a funciones
+miFuncion();
+            </code>
+        </pre>
+    </p>
+
+    <h4>¿Cómo se declaran variables en JS?</h4>
+    <p>Las variables en JavaScript se pueden declarar usando <code>var</code>, <code>let</code> y <code>const</code>:</p>
+    <p>
+        <pre>
+            <code>
+var variable1;
+let variable2;
+const variable3 = 'valor';
+            </code>
+        </pre>
+    </p>
+
+    <h4>¿Cómo se declaran funciones en JS?</h4>
+    <p>Las funciones en JavaScript se declaran utilizando la palabra clave <code>function</code> seguida del nombre de la función y paréntesis:</p>
+    <p>
+        <pre>
+            <code>
+function miFuncion() {
+    // código de la función
+}
+            </code>
+        </pre>
+    </p>
+
+    <h4>¿Cómo se llaman funciones en JS?</h4>
+    <p>Las funciones en JavaScript se llaman utilizando el nombre de la función seguido de paréntesis:</p>
+    <p>
+        <pre>
+            <code>
+miFuncion();
+            </code>
+        </pre>
+    </p>
+
+    <h4>¿Cómo declaras una función interna de un HTML con JS y cómo declaras un documento externo con JS?</h4>
+    <p>Para declarar una función interna en HTML, puedes usar una etiqueta <code>&lt;script&gt;</code> dentro del documento HTML:</p>
+    <p>
+        <pre>
+            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Función Interna&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button onclick="saludar()"&gt;Saludar&lt;/button&gt;
+    &lt;script&gt;
+        function saludar() {
+            alert('¡Hola desde una función interna!');
+        }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </p>
+    <p>Para declarar una función en un archivo externo, puedes enlazar el archivo JavaScript usando la etiqueta <code>&lt;script&gt;</code> con el atributo <code>src</code>:</p>
+    <p>
+        <pre>
+            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Función Externa&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button onclick="saludar()"&gt;Saludar&lt;/button&gt;
+    &lt;script src="funcion.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </p>
+    <p>Y el archivo JavaScript ("funcion.js") tendría el siguiente código:</p>
+    <p>
+        <pre>
+            <code>
+function saludar() {
+    alert('¡Hola desde una función externa!');
+}
+            </code>
+        </pre>
+    </p>
+
+    <h4>¿Cuáles ciclos de programación están disponibles en JS?</h4>
+    <p>Los ciclos de programación disponibles en JavaScript son:</p>
+    <p>
+        <pre>
+            <code>
+// Ciclo for
+for (let i = 0; i &lt; 10; i++) {
+    console.log(i);
+}
+
+// Ciclo while
+let i = 0;
+while (i &lt; 10) {
+    console.log(i);
+    i++;
+}
+
+// Ciclo do...while
+let j = 0;
+do {
+    console.log(j);
+    j++;
+} while (j &lt; 10);
+            </code>
+        </pre>
+    </p>
+
+    <h4>¿Cuáles funciones de condicional están disponibles en JS?</h4>
+    <p>Las funciones condicionales disponibles en JavaScript son:</p>
+    <p>
+        <pre>
+            <code>
+// Condicional if
+if (condicion) {
+    // código si la condición es verdadera
+} else {
+    // código si la condición es falsa
+}
+
+// Condicional else if
+if (condicion1) {
+    // código si la condición1 es verdadera
+} else if (condicion2) {
+    // código si la condición2 es verdadera
+} else {
+    // código si ninguna condición es verdadera
+}
+
+// Condicional switch
+switch (expresion) {
+    case valor1:
+        // código si la expresión es igual a valor1
+        break;
+    case valor2:
+        // código si la expresión es igual a valor2
+        break;
+    default:
+        // código si la expresión no coincide con ningún valor
+}
+            </code>
+        </pre>
+    </p>
+
+    
+   
+    <h2>Conclusiones</h2><br>
+    <p>El uso de JavaScript es bastante usado hoy en día y provee una cantidad de herramientas que son útiles para la creación de sitios web.</p>
+    <h2>Referencias</h2>
+    <p>No hay referencias</p>
+    <h2>Descargables</h2>
+    <p>No hay descargables</p>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
