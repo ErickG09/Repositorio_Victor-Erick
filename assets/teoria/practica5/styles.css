@@ -1,0 +1,228 @@
+h1 {
+    font-family: 'sans-serif', sans-serif;
+    text-align: center;
+    color: #444444;
+    padding: 20px;
+    
+  }
+  
+  .texto{
+    font-family: 'Arial', Arial;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .estilo1 {
+    color: red;
+    background-color: yellow;
+    font-size: 20px;
+    border: 2px solid black;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .estilo2 {
+    color: blue;
+    background-color: white;
+    font-size: 18px;
+    border: 1px dashed green;
+    padding: 5px;
+  }
+  
+  .estilo3 {
+    color: green;
+    background-color: lightgray;
+    font-size: 22px;
+    text-decoration: underline;
+    font-family: 'Georgia', serif;
+  }
+  
+  .estilo4 {
+    color: orange;
+    background-color: pink;
+    font-size: 16px;
+    border: 2px dotted purple;
+  }
+  
+  .estilo5 {
+    color: black;
+    background-color: cyan;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  .estilo6 {
+    color: magenta;
+    background-color: lime;
+    font-size: 20px;
+    border: 1px dashed blue;
+  }
+  
+  .estilo7 {
+    color: teal;
+    background-color: lavender;
+    font-size: 26px;
+    font-style: italic;
+  }
+  
+  .estilo8 {
+    color: navy;
+    background-color: beige;
+    font-size: 18px;
+    font-family: 'Tahoma', sans-serif;
+  }
+  
+  .estilo9 {
+    color: brown;
+    background-color: lightblue;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+  
+  .estilo10 {
+    color: darkgreen;
+    background-color: lightyellow;
+    font-size: 20px;
+    border: 2px solid pink;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .estilo11 {
+    color: maroon;
+    background-color: lightcyan;
+    font-size: 24px;
+    border: 2px dashed purple;
+  }
+  
+  .estilo12 {
+    color: violet;
+    background-color: lightgray;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  .estilo13 {
+    color: gold;
+    background-color: darkgray;
+    font-size: 22px;
+  }
+  
+  .estilo14 {
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    border: 3px solid red;
+  }
+  
+  .estilo15 {
+    color: darkblue;
+    background-color: lightgreen;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  
+  .estilo16 {
+    color: coral;
+    background-color: mintcream;
+    font-size: 24px;
+    font-style: italic;
+  }
+  
+  .estilo17 {
+    color: indigo;
+    background-color: aliceblue;
+    font-size: 18px;
+  }
+  
+  .estilo18 {
+    color: olive;
+    background-color: ivory;
+    font-size: 22px;
+    border: 3px solid teal;
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  .estilo19 {
+    color: turquoise;
+    background-color: seashell;
+    font-size: 20px;
+  }
+  
+  .estilo20 {
+    color: salmon;
+    background-color: wheat;
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+  
+  .estilo21 {
+    color: sienna;
+    background-color: oldlace;
+    font-size: 18px;
+    border: 2px dotted gold;
+  }
+  
+  .estilo22 {
+    color: silver;
+    background-color: linen;
+    font-size: 24px;
+    border: 3px solid white;
+  }
+  
+  .estilo23 {
+    color: chocolate;
+    background-color: floralwhite;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Impact', sans-serif;
+  }
+  
+  .estilo24 {
+    color: lime;
+    background-color: lightpink;
+    font-size: 18px;
+  }
+  
+  .estilo25 {
+    color: darkred;
+    background-color: lightgoldenrodyellow;
+    font-size: 22px;
+    border: 2px dotted indigo;
+  }
+  
+  .estilo26 {
+    color: deeppink;
+    background-color: moccasin;
+    font-size: 20px;
+  }
+  
+  .estilo27 {
+    color: darkslategray;
+    background-color: papayawhip;
+    font-size: 26px;
+    text-decoration: underline;
+    font-family: 'Lucida Console', Monaco, monospace;
+  }
+  
+  .estilo28 {
+    color: firebrick;
+    background-color: peachpuff;
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  .estilo29 {
+    color: darkorchid;
+    background-color: lavenderblush;
+    font-size: 24px;
+  }
+  
+  .estilo30 {
+    color: purple;
+    background-color: orange;
+    font-size: 24px;
+    border: 4px groove pink;
+    font-family: 'Garamond', serif;
+  }
