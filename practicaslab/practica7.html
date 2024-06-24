@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes digitales - Victor & Erick</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portafolio web - Redes digitales de datos y Laboratorio.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Informacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de nosotros</a>
+
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+ 
+    <!-- Main content -->
+    <h1>Práctica: Envío PHP</h1>
+    <h2>Resumen</h1>
+    <p>En este proyecto, desarrollamos una página web con PHP y la implementamos tanto en un servidor local como en un servidor en la nube. Utilizamos una ESP32 para enviar datos a esta página web y verificar su correcto funcionamiento. Nuestro objetivo principal fue comprender y demostrar cómo se integran estos componentes para crear un sistema interactivo y funcional.</p>
+    <h2>Introducción</h2>
+    <p>El avance de la tecnología nos permite conectar dispositivos y sistemas de manera eficiente. En este proyecto, nos propusimos explorar la integración de una página web programada en PHP con un servidor local y uno en la nube, utilizando una ESP32 para el envío de datos. Este tipo de sistemas es fundamental en el desarrollo de aplicaciones de IoT (Internet of Things), donde los dispositivos necesitan comunicarse y actualizar información en tiempo real.</p>
+    <h2>Herramientas</h2>
+    <ul>
+        <li>ESP32 WROOM32</li>
+        <li>XAMPP</li>
+        <li>000webhost</li>
+        <li>Arduino IDE</li>
+        <li>Replit</li>
+    </ul>
+    <h2>Desarrollo</h2>
+    <h3>Objetivo General</h3>
+    <p>Conocer, identificar y comprobar el funcionamiento de una página web con programación PHP, Servidor Local, un servidor en la nube y envío de datos con el módulo ESP32.</p>
+
+    <h3>Objetivos específicos</h3>
+    <ul>
+        <li>Utilizando bloc de notas desarrollar una página web con código PHP que permita actualizar el valor de un sensor. Recuerda guardar el archivo como “index.php”.</li>
+        <li>Utilizando XAMPP, coloca la página web en el servidor local y visualízala en el explorador, corrobora el correcto funcionamiento para actualizar los valores de la página.</li>
+        <li>Utilizando otra computadora y una conexión con el servidor local mediante su dirección IP, modifica los datos de la página Web de PHP utilizando la siguiente URL con la IP correcta:
+            <code>192.168.0.X/?A=1&B=3</code>
+        </li>
+        <li>Utilizando un servidor en la nube, sube tu página Web de PHP, visualízala en el explorador con la dirección Web y corrobora su funcionamiento directo desde el explorador.</li>
+        <li>Utilizando el NodeMCU y el ejemplo de GET, realiza una conexión con el servidor local mediante su dirección IP y modifica los datos de la página Web de PHP utilizando la siguiente petición (Request) con la IP correcta:
+            <code>192.168.0.X/?A=1&B=3</code>
+        </li>
+        <li>Utilizando un servidor en la nube, sube tu página Web de PHP, utilizando el NodeMCU y el ejemplo de GET, realiza una conexión a la dirección Web y corrobora el funcionamiento del sistema directo desde el explorador.</li>
+    </ul>
+    <h2>Resultados</h2>
+    <h3>Página web con PHP</h3>
+    <p>Para esta práctica, utilizamos Replit para crear nuestra página web utilizando PHP. Hicimos la página muy sencilla, agregando
+        un título principal con el nombre de la práctca y dos "h3" donde se visualiza la información que actualizaremos más adelante.
+    </p>
+    <img src="../assets/laboratorio/practica7/imagenes/imagen_php.jpg" alt="" width="100%">
+    <h3>Probando servidor local</h3>
+    <p>Para probar el servidor local, utilizamos el programa XAMPP. Para ver la página que hicimos en Replit, copiamos el código y lo pegamos
+        en un bloc de notas con el nombre "index.php" y lo guardamos en XAMPP.
+    </p>
+    <img src="../assets/index/lab/apache.jpg" alt="" width="60%">
+    <p>Para probar el funcionamiento del servidor en XAMPP, iniciamos el modulo de Apache, después abrimos un navegador y escribimos "localhost" o la dirección IP 
+        de nuestro internet, que en nuestro caso es "192.168.1.93".
+    </p>
+    
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica7/videos/prueba_servidor_local.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h3>Probando servidor local en otro dispositivo</h3>
+    <p>Utilizamos otra laptop para probar el correcto funcionamiento del servidor, en este caso, utilizamos la dirección IP: 192.168.1.93.</p>
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica7/videos/prueba_servidor_local_otro_dispositivo.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h3>Probando página web en un servidor en la nube</h3>
+    <p>000webhost es un proveedor de alojamiento web gratuito que permite a 
+        los usuarios subir y alojar sus páginas web en la nube sin costo 
+        alguno. Ofrece soporte para PHP y MySQL, facilitando la creación de 
+        sitios web dinámicos e interactivos. Con un panel de control intuitivo, 
+        000webhost es ideal para desarrolladores, estudiantes y pequeños emprendedores que desean 
+        poner en línea sus proyectos de manera sencilla y rápida. Utilizamos 000webhost para subir
+         nuestra página web de PHP y alojarla en la nube, asegurando su accesibilidad desde cualquier lugar 
+         con conexión a Internet.</p>
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica7/videos/prueba_servidor_nube.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <h3>Probando la conexión local con ESP32 y PHP</h3>
+    <p>En esta parte de la práctica, utilizamos la ESP32 para probar el funcionamiento de la página web en el servidor local. La ESP32 se conectó al servidor local mediante la dirección IP "192.168.1.93" y utilizamos la petición GET para modificar los datos de la página web de PHP, comprobando que la ESP32 podía interactuar correctamente con el servidor local.</p>
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica7/videos/prueba_servidor_local_esp32.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <h3>Probando la conexión en la nube con ESP32 y PHP</h3>
+    <p>Finalmente, subimos la página web de PHP a un servidor en la nube utilizando 000webhost y probamos la conexión con la ESP32. La ESP32 se conectó a la dirección web proporcionada por 000webhost y realizamos una petición GET para modificar los datos de la página web, asegurando que el sistema funcionaba correctamente desde cualquier lugar con acceso a Internet.</p>
+    <video width="640" height="360" controls>
+        <source src="../assets/laboratorio/practica7/videos/prueba_servidor_nube_esp32.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <h2>Conclusiones</h2>
+    <p>Con este proyecto, logramos implementar y comprobar el funcionamiento de una página web con PHP en diferentes entornos de servidor, tanto local como en la nube. La utilización de la ESP32 para enviar datos y actualizar la página web en tiempo real demostró ser una solución efectiva y práctica para aplicaciones de IoT. Este ejercicio no solo nos permitió entender mejor la comunicación entre dispositivos y servidores, sino que también sentó las bases para futuros desarrollos en sistemas interconectados y automatización.</p>
+    <h2>Referencias</h2>
+    <p>No hay referencias</p>
+    <h2>Descargables</h2>
+    <p>No hay descargables</p>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
