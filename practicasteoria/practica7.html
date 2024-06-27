@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación sobre PHP</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portafolio web - Redes digitales de datos y Laboratorio.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Información</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../acercadenosotros.html">Acerca de nosotros</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+
+    
+    <h1>Práctica: Investigación de <b>PHP</b></h1><br>
+    <h2>Resumen</h2>
+    <p>En esta práctica/investigación se revisó el uso de <b>PHP</b>, un lenguaje de scripting utilizado principalmente en el desarrollo web para crear contenido dinámico.</p>
+    
+    <h2>Herramientas</h2>
+    <ul>
+        <li><a href="https://replit.com/">replit.com</a></li>
+        <li>Investigaciones por internet</li>
+    </ul>
+    
+    <h2>Desarrollo</h2><br>
+    <h3>Objetivo General</h3>
+    <p>Obtener conocimientos básicos de PHP.</p>
+
+    <h3>PHP</h3><br>
+    <p>En esta sección se encuentra toda la información sobre PHP</p>
+
+    <h4>¿Qué es el lenguaje PHP?</h4>
+    <p>PHP (Hypertext Preprocessor) es un lenguaje de scripting del lado del servidor diseñado especialmente para el desarrollo web. Se puede incrustar en HTML para crear páginas web dinámicas.</p>
+
+    <h4>¿Para qué sirve el lenguaje PHP?</h4>
+    <p>PHP se utiliza para generar contenido dinámico, interactuar con bases de datos, gestionar sesiones y cookies, procesar formularios y datos del usuario, y realizar operaciones de autenticación y control de acceso.</p>
+
+    <h4>¿Cuál es la diferencia entre los archivos HTML y PHP?</h4>
+    <p>HTML es un lenguaje de marcado utilizado para estructurar y presentar contenido en la web. PHP es un lenguaje de scripting que se ejecuta en el servidor y puede generar contenido HTML dinámicamente.</p>
+
+    <h4>¿Para qué sirve la etiqueta <code>&lt;?php ?&gt;</code>?</h4>
+    <p>La etiqueta <code>&lt;?php ?&gt;</code> se utiliza para delimitar el código PHP dentro de un archivo. Todo el código dentro de estas etiquetas será interpretado y ejecutado por el servidor antes de enviar la salida al navegador.</p>
+
+    <h4>¿Cuáles son los pasos y requisitos para cargar un archivo PHP en un servidor?</h4>
+    <p>1. Instalar un servidor web como Apache.<br>
+       2. Instalar PHP y configurarlo en el servidor.<br>
+       3. Subir los archivos PHP al servidor.<br>
+       4. Configurar permisos correctos para los archivos.<br>
+       5. Acceder al archivo a través de la URL correspondiente en el navegador.</p>
+
+    <h4>Programa básico “Hola mundo” con PHP</h4>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Hola Mundo PHP&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;&lt;?php echo "Hola Mundo desde PHP"; ?&gt;&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+    <p>Este programa utiliza las etiquetas <code>&lt;?php ?&gt;</code> para incluir código PHP dentro de un archivo HTML. La función <code>echo</code> se usa para imprimir "Hola Mundo desde PHP" en la página web.</p>
+
+    <p>La siguiente imágen es como se ve en Replit.</p>
+    <img src="../assets/teoria/practica7/imagenes/php_holamundo.jpg" alt="" width="100%">
+    <p>Puedes consultar el código de Replit en el siguiente <a href="https://replit.com/@ErickGuevara1/ImaginaryRobustDivisor#index.php" target="_blank">link</a>.</p>
+
+    <h4>¿Para qué sirve la función <code>echo</code> en PHP?</h4>
+    <p>La función <code>echo</code> se utiliza para enviar datos a la salida estándar (generalmente el navegador web). Es utilizada para imprimir texto, variables y HTML desde un script PHP.</p>
+
+    <h4>¿Cuál es la sintaxis de la programación en PHP?</h4>
+    <p>La sintaxis de PHP es similar a la de otros lenguajes de programación como C, Java y Perl.</p>
+
+    <h4>Diferencia y consideraciones especiales al utilizar caracteres en mayúsculas en PHP</h4>
+    <p>En PHP, las palabras reservadas no distinguen entre mayúsculas y minúsculas, pero las variables sí. Es decir, <code>$Variable</code> y <code>$variable</code> se consideran variables diferentes.</p>
+
+    <h4>¿Cómo se declaran variables en PHP?</h4>
+    <p>Las variables en PHP se declaran con el símbolo <code>$</code> seguido del nombre de la variable:</p>
+    <pre><code>
+&lt;?php
+$miVariable = "Hola";
+?&gt;
+    </code></pre>
+
+    <h4>¿Cómo se declaran funciones en PHP?</h4>
+    <p>Las funciones se declaran utilizando la palabra clave <code>function</code>:</p>
+    <pre><code>
+&lt;?php
+function miFuncion() {
+    return "Hola Mundo";
+}
+?&gt;
+    </code></pre>
+
+    <h4>¿Cómo se llaman funciones en PHP?</h4>
+    <p>Las funciones se llaman por su nombre seguido de paréntesis:</p>
+    <pre><code>
+&lt;?php
+echo miFuncion();
+?&gt;
+    </code></pre>
+
+    <h4>¿Cuáles ciclos de programación están disponibles en PHP?</h4>
+    <p>PHP ofrece ciclos como <code>for</code>, <code>while</code>, <code>do...while</code>, y <code>foreach</code>.</p>
+
+    <h4>¿Cuáles funciones de condicional están disponibles en PHP?</h4>
+    <p>PHP incluye condicionales como <code>if</code>, <code>else</code>, <code>elseif</code>, y <code>switch</code>.</p>
+
+    <h4>Métodos reservados para el tratamiento de archivos en PHP</h4>
+    <p>Algunos métodos incluyen <code>fopen()</code>, <code>fclose()</code>, <code>fread()</code>, <code>fwrite()</code>, <code>file_get_contents()</code>, <code>file_put_contents()</code>, y <code>unlink()</code>.</p>
+
+    <h4>Programa básico para crear un archivo de texto en el servidor</h4>
+    <pre><code>
+&lt;?php
+$archivo = 'archivo.txt';
+$contenido = "Este es un contenido de ejemplo.\n";
+
+// Crear y escribir en el archivo
+file_put_contents($archivo, $contenido);
+
+// Verificar que el archivo se creó y mostrar un mensaje
+if (file_exists($archivo)) {
+    echo "El archivo se ha creado correctamente.";
+} else {
+    echo "Hubo un problema al crear el archivo.";
+}
+?&gt;
+    </code></pre>
+
+    <p>Este código funciona de la siguiente manera: </p>
+    <p>
+        <code>$archivo = 'archivo.txt';</code><br>
+        <code>$contenido = "Este es un contenido de ejemplo.\n";</code><br><br>
+        Primero se declara una variable <code>$archivo</code> que contiene el nombre del archivo que se va a crear (<code>archivo.txt</code>).
+        Se declara una variable <code>$contenido</code> que contiene el texto que se escribirá dentro del archivo. El <code>\n</code> al final del contenido representa un salto de línea.
+    </p>
+
+    <p>Después creamos el archivo. </p>
+    <p>
+        <code>file_put_contents($archivo, $contenido);</code><br>
+        La función <code>file_put_contents()</code> se utiliza para crear un archivo y escribir contenido en él.
+        Si el archivo no existe, <code>file_put_contents()</code> lo crea; si ya existe, sobrescribe su contenido con el nuevo contenido proporcionado en la variable <code>$contenido</code>.
+    </p>
+
+    <p>Por último verificamos que el archivo se creo correctamente.</p>
+    <p>
+        <code>if (file_exists($archivo)) {</code><br>
+        <code>    echo "El archivo se ha creado correctamente.";</code><br>
+        <code>} else {</code><br>
+        <code>    echo "Hubo un problema al crear el archivo.";</code><br>
+        <code>}</code><br>
+        La función <code>file_exists()</code> se utiliza para verificar si el archivo especificado existe en el servidor.
+        Si el archivo existe, se imprime el mensaje "El archivo se ha creado correctamente.".
+        Si el archivo no existe, se imprime el mensaje "Hubo un problema al crear el archivo.".
+    </p>
+
+    <p>La siguiente imágen es como se ve el código en Replit.</p>
+    <img src="../assets/teoria/practica7/imagenes/php.jpg" alt="" width="100%">
+    <p>Puedes consultar el código de Replit en el siguiente <a href="https://replit.com/@ErickGuevara1/GlitteringRevolvingFile#index.php" target="_blank">link</a>.</p>
+
+    <h4>Método Open/Read en el manejo de archivos con PHP</h4>
+    <pre><code>
+&lt;?php
+$archivo = 'archivo.txt';
+
+// Abrir el archivo en modo lectura
+$fp = fopen($archivo, 'r');
+
+// Leer el contenido del archivo
+if ($fp) {
+    while (($linea = fgets($fp)) !== false) {
+        echo $linea . "&lt;br&gt;";
+    }
+    fclose($fp);
+} else {
+    echo "No se pudo abrir el archivo.";
+}
+?&gt;
+    </code></pre>
+    <p>Este script abre un archivo en modo lectura (<code>'r'</code>) usando <code>fopen</code>, lee cada línea con <code>fgets</code> y la imprime. Finalmente, cierra el archivo con <code>fclose</code>.</p>
+
+    <h4>Método Create/Write en el manejo de archivos con PHP</h4>
+    <pre><code>
+&lt;?php
+$archivo = 'nuevoArchivo.txt';
+$contenido = "Contenido de ejemplo para escribir en el archivo.\n";
+
+// Crear y abrir el archivo en modo escritura
+$fp = fopen($archivo, 'w');
+
+// Escribir contenido en el archivo
+if ($fp) {
+    fwrite($fp, $contenido);
+    fclose($fp);
+    echo "El archivo se ha creado y escrito correctamente.";
+} else {
+    echo "No se pudo crear o escribir en el archivo.";
+}
+?&gt;
+    </code></pre>
+    <p>Este script crea y abre un archivo en modo escritura (<code>'w'</code>) usando <code>fopen</code>, escribe contenido con <code>fwrite</code>, y cierra el archivo con <code>fclose</code>.</p>
+
+    <h4>Ventajas de integrar PHP en una página web</h4>
+    <p>
+        <ul>
+            <li><b>Interactividad:</b> Permite crear páginas web dinámicas que responden a las interacciones del usuario.</li>
+            <li><b>Integración con bases de datos:</b> Facilita la conexión y manipulación de bases de datos.</li>
+            <li><b>Flexibilidad:</b> Puede incrustarse en HTML y combinarse con JavaScript, CSS y otros lenguajes.</li>
+            <li><b>Amplia comunidad:</b> PHP tiene una gran comunidad y abundante documentación.</li>
+            <li><b>Compatibilidad:</b> Funciona en la mayoría de los servidores web y sistemas operativos.</li>
+        </ul>
+    </p>
+
+    <h2>Conclusiones</h2>
+    <p>El uso de PHP es ampliamente utilizado en el desarrollo web debido a su flexibilidad, capacidad de interacción con bases de datos, y amplia comunidad de soporte. Permite crear sitios web dinámicos e interactivos de manera eficiente.</p>
+    
+    <h2>Referencias</h2>
+    <p>No hay referencias.</p>
+    
+    <h2>Descargables</h2>
+    <p>No hay descargables.</p>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

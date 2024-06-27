@@ -1,0 +1,134 @@
+/* Navbar styling */
+.navbar {
+    background-color: #007bff; /* Cambia el color de fondo de la barra de navegación */
+    padding: 15px 20px; /* Ajusta el relleno para dar más espacio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra a la barra de navegación */
+}
+
+.navbar-brand {
+    color: #fff; /* Cambia el color del texto de la marca a blanco */
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente de la marca */
+    font-weight: bold; /* Hace el texto de la marca más grueso */
+    text-transform: uppercase; /* Convierte el texto de la marca a mayúsculas */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* Cambia el color de los enlaces de navegación a blanco */
+    margin-left: 15px; /* Añade un margen entre los enlaces */
+    font-size: 1.1em; /* Aumenta el tamaño de la fuente de los enlaces */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Añade una transición suave al color y fondo de los enlaces */
+    padding: 10px 15px; /* Añade relleno a los enlaces para parecer botones */
+    border-radius: 5px; /* Añade bordes redondeados a los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Cambia el color del texto al pasar el ratón por encima */
+    background-color: #fff; /* Cambia el fondo al pasar el ratón por encima */
+    text-decoration: none; /* Quita la decoración del texto al pasar el ratón por encima */
+}
+
+.nav-item.active .nav-link {
+    color: #007bff; /* Cambia el color del enlace activo */
+    background-color: #fff; /* Cambia el fondo del enlace activo */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Cambia el color del borde del botón del menú */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Cambia el color del icono del menú */
+}
+
+/* General styles for the body and container */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+/* Card styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    flex-grow: 1;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Limit text to 5 lines */
+    -webkit-box-orient: vertical;
+}
+
+/* Button styles */
+.btn {
+    align-self: center;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+}
