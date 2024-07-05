@@ -8,6 +8,17 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles.css">
 
+    <style>
+        code {
+            color: #2c3e50;
+            display: block;
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 5px solid #2c3e50;
+        }
+    </style>
+
 </head>
 <body>
     <!-- Navbar -->
@@ -37,7 +48,9 @@
     <div class="main-container">
     <h1>Práctica: Cables de red</h1>
     <h2>Resumen</h1>
+    <p>Durante la práctica, investigamos y explicamos las configuraciones de los cables de red estructurados, tanto directos como cruzados. Nos enfocamos en comprender las diferencias entre el estándar T568A y T568B, y cómo se aplican en cada tipo de cable. Posteriormente, armamos dos cables de red directos y dos cables de red cruzados, asegurándonos de seguir las configuraciones correctas. Finalmente, probamos cada cable para verificar su funcionamiento y asegurarnos de que estaban correctamente armados y operativos.</p>
     <h2>Introducción</h2>
+    <p>En esta práctica, nos propusimos conocer, identificar y comprobar el funcionamiento de los cables de red estructurados. Este conocimiento es esencial para garantizar una correcta instalación y mantenimiento de redes de comunicación, fundamentales en cualquier entorno tecnológico. A través de la configuración y prueba de cables directos y cruzados, buscamos afianzar nuestras habilidades prácticas en el manejo de infraestructuras de red.</p>
     <h2>Materiales</h2>
     <ul>
         <li>Cable de red para armar</li>
@@ -54,12 +67,108 @@
         <li>Armas 2 cables de red directos y probarlos.</li>
         <li>Armar 2 cables de red cruzados y probarlos.</li>
     </ul>
+
+    <h2>Configuración de los Cables de Red Estructurados: Directo y Cruzado</h2>
+    <img src="../assets/especial/practica1/cables.gif" alt="" width="80%">
+    <h3>Cable Directo (Straight-Through)</h3>
+    <p>Un cable directo se utiliza para conectar dispositivos diferentes, como un computador a un switch o un router. La configuración de los cables directos sigue el mismo orden de colores en ambos extremos, según el estándar T568A o T568B.</p>
+
+    <h4>Estándar T568A:</h4>
+    <code>
+        Pin 1: Blanco/Verde<br>
+        Pin 2: Verde<br>
+        Pin 3: Blanco/Naranja<br>
+        Pin 4: Azul<br>
+        Pin 5: Blanco/Azul<br>
+        Pin 6: Naranja<br>
+        Pin 7: Blanco/Marrón<br>
+        Pin 8: Marrón
+    </code>
+
+    <h4>Estándar T568B:</h4>
+    <code>
+        Pin 1: Blanco/Naranja<br>
+        Pin 2: Naranja<br>
+        Pin 3: Blanco/Verde<br>
+        Pin 4: Azul<br>
+        Pin 5: Blanco/Azul<br>
+        Pin 6: Verde<br>
+        Pin 7: Blanco/Marrón<br>
+        Pin 8: Marrón
+    </code>
+
+    <p>Para que un cable sea considerado directo, ambos extremos deben seguir el mismo estándar, ya sea T568A o T568B.</p>
+
+    <h3>Cable Cruzado (Crossover)</h3>
+    <p>Un cable cruzado se utiliza para conectar dispositivos similares, como un computador a otro computador o un switch a otro switch sin necesidad de un puerto uplink. La configuración de un cable cruzado implica diferentes órdenes de colores en cada extremo. Generalmente, un extremo sigue el estándar T568A y el otro extremo sigue el estándar T568B:</p>
+
+    <h4>Extremo A (T568A):</h4>
+    <code>
+        Pin 1: Blanco/Verde<br>
+        Pin 2: Verde<br>
+        Pin 3: Blanco/Naranja<br>
+        Pin 4: Azul<br>
+        Pin 5: Blanco/Azul<br>
+        Pin 6: Naranja<br>
+        Pin 7: Blanco/Marrón<br>
+        Pin 8: Marrón
+    </code>
+
+    <h4>Extremo B (T568B):</h4>
+    <code>
+        Pin 1: Blanco/Naranja<br>
+        Pin 2: Naranja<br>
+        Pin 3: Blanco/Verde<br>
+        Pin 4: Azul<br>
+        Pin 5: Blanco/Azul<br>
+        Pin 6: Verde<br>
+        Pin 7: Blanco/Marrón<br>
+        Pin 8: Marrón
+    </code>
+
+    <h2>Probar un Cable de Red Directo y Cruzado</h2>
+
+    <h3>Probar un Cable Directo</h3>
+    <p>Para comprobar el funcionamiento de un cable directo, seguimos estos pasos:</p>
+    <ul>
+        <li><strong>Inspección Visual:</strong> Verificamos que los colores de los cables sigan el mismo orden en ambos extremos del cable.</li>
+        <li><strong>Prueba de Conexión:</strong>
+            <ul>
+                <li>Conectamos un extremo del cable a la red de la universidad.</li>
+                <li>Conectamos el otro extremo a una computadora.</li>
+                <li>Para comprobar si el cable funciona, intentamos conectarnos a la red de la universidad desde la computadora. Si logramos conectarnos a la red, confirmamos que el cable directo está funcionando correctamente.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Probar un Cable Cruzado</h3>
+    <p>Para comprobar el funcionamiento de un cable cruzado, seguimos estos pasos:</p>
+    <ul>
+        <li><strong>Inspección Visual:</strong> Verificamos que los colores de los cables sigan el orden T568A en un extremo y T568B en el otro.</li>
+        <li><strong>Prueba de Conexión:</strong>
+            <ul>
+                <li>Conectamos un extremo del cable a una computadora.</li>
+                <li>Conectamos el otro extremo a otra computadora.</li>
+                <li>Para verificar la conexión, observamos que en ambas computadoras apareció un mensaje indicando que hay una conexión de red, pero que esta no está identificada. Este mensaje nos confirma que el cable cruzado está configurado correctamente y permite la comunicación directa entre las dos computadoras.</li>
+            </ul>
+        </li>
+    </ul>
+
+
     <h2>Resultados</h2>
-    <video width="640" height="360" controls>
+    <h3>Cable directo</h3>
+    <video width="640" height="360" controls muted autoplay>
         <source src="../assets/especial/practica1/cable_directo.mp4" type="video/mp4">
         Tu navegador no soporta la etiqueta de video.
     </video><br>
+    <h3>Cable cruzado</h3>
+    <video width="640" height="360" controls muted autoplay>
+        <source src="../assets/especial/practica1/cable_directo.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    
     <h2>Conclusiones</h2>
+    <p>Al finalizar la práctica, logramos armar y probar exitosamente tanto cables de red directos como cruzados. A través de la inspección visual y el uso de un tester de cables, confirmamos que nuestras conexiones eran correctas y funcionales. Esta experiencia nos permitió fortalecer nuestra comprensión de las configuraciones de cables de red y nos preparó mejor para futuras tareas relacionadas con la infraestructura de red. La práctica no solo nos proporcionó habilidades técnicas, sino también la confianza para aplicar estos conocimientos en escenarios reales.</p>
     <h2>Referencias</h2>
     <p>No hay referencias.</p>
     <h2>Descargables</h2>

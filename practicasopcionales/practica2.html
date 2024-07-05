@@ -37,7 +37,9 @@
     <div class="main-container">
     <h1>Práctica: Configuración de Red Local</h1>
     <h2>Resumen</h1>
+    <p>Durante la práctica, conectamos nuestra computadora a la red Wi-Fi de la universidad, identificamos la IP asignada, instalamos XAMPP para configurar un servidor local y montamos un sitio web de prueba, habilitando el acceso al puerto 80 a través del firewall. Verificamos el acceso desde tres dispositivos diferentes, creamos un mapa de accesos de equipos e identificamos las IPs de nuestros compañeros en la red. Repetimos los mismos pasos utilizando una conexión de cable directo a la red cableada de la universidad y, finalmente, configuramos una conexión con un cable cruzado entre dos equipos, asignando las IPs 192.168.0.1 y 192.168.0.2, verificando la comunicación entre ellos.</p>
     <h2>Introducción</h2>
+    <p>En esta práctica, nuestro objetivo fue conocer, investigar e identificar los pasos necesarios para configurar una red local y permitir el acceso a recursos de un equipo en red. El establecimiento de una red local eficiente es esencial para facilitar la comunicación y el intercambio de recursos entre dispositivos. A través de esta actividad, nos familiarizamos con la conexión a redes tanto inalámbricas como cableadas, la configuración de servidores locales, y la administración de accesos y recursos compartidos.</p>
     <h2>Desarrollo</h2>
     <h3>Objetivo general</h3>
     <p>Conocer, investigar e identificar los pasos para configurar una red local y el acceso a recursos de un equipo en red.</p>
@@ -53,7 +55,94 @@
         <li>Repite los mismos pasos, pero ahora con el cable cruzado entre dos equipos, configurando la IP de ambos equipos a 192.168.0.1 (un equipo) y el 192.168.0.2 (el segundo equipo).</li>
     </ul>
     <h2>Resultados</h2>
+    <h3>Comprobando el acceso al sitio web en el servidor local desde 3 dispositivos mediante conexión wifi</h3>
+    <video width="640" height="360" controls muted autoplay>
+        <source src="../assets/especial/practica2/sitio_web_wifi.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h3>Mapa de accesos de equipos en la red</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dispositivo</th>
+                <th>Dirección IP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Computadora de Miguel</td>
+                <td>172.18.39.36</td>
+            </tr>
+            <tr>
+                <td>Computadora de Erick</td>
+                <td>172.18.34.27</td>
+            </tr>
+            <tr>
+                <td>Computadora de laboratorio de la uni</td>
+                <td>172.18.39.55</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Comprobando el acceso al sitio web en el servidor local desde 3 dispositivos mediante cable directo</h3>
+    <video width="640" height="360" controls muted autoplay>
+        <source src="../assets/especial/practica2/sitio_web_cable.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h3>Mapa de accesos de equipos en la red</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dispositivo</th>
+                <th>Dirección IP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Computadora de Miguel</td>
+                <td>172.18.39.36</td>
+            </tr>
+            <tr>
+                <td>Computadora de Erick</td>
+                <td>172.16.224.61</td>
+            </tr>
+            <tr>
+                <td>Computadora de laboratorio de la uni</td>
+                <td>172.18.39.55</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Comprobando el acceso al sitio web en el servidor local entre dos equipos medicante un cable cruzado</h3>
+    <video width="640" height="360" controls muted autoplay>
+        <source src="../assets/especial/practica2/cable_cruzado.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <h3>Mapa de accesos de equipos en la red</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Dispositivo</th>
+                <th>Dirección IP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Computadora de Miguel</td>
+                <td>192.168.0.2</td>
+            </tr>
+            <tr>
+                <td>Computadora de Erick</td>
+                <td>192.168.0.3</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Para esta parte de la práctica, utilizamos la dirección IP 192.168.0.3 debido a que la dirección IP 192.168.0.1 es comúnmente utilizada como la dirección del gateway predeterminado (o router) en muchas redes domésticas y de pequeñas empresas. Esto significa que el router de la red está configurado para usar esta dirección y administrar el tráfico entre la red local y otras redes, incluyendo Internet.</p>
+
+
     <h2>Conclusiones</h2>
+    <p>Al finalizar la práctica, logramos configurar exitosamente una red local tanto mediante conexión inalámbrica como cableada. Pudimos instalar y configurar un servidor local utilizando XAMPP, habilitar los servicios necesarios y asegurar el acceso desde otros dispositivos en la misma red. La creación del mapa de accesos y la identificación de las IPs de los dispositivos en la red nos permitió entender mejor la topología de la red y gestionar los recursos compartidos. La práctica de conectar equipos mediante cables directos y cruzados nos proporcionó una visión completa de las distintas configuraciones posibles en una red local. Esta experiencia nos dotó de habilidades prácticas cruciales para la administración de redes y la configuración de servidores locales.</p>
     <h2>Referencias</h2>
     <p>No hay referencias.</p>
     <h2>Descargables</h2>
