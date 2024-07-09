@@ -36,9 +36,62 @@
     <!-- Main content -->
     <div class="main-container">
         <h1>Proyecto final </h1>
+        <h2>Presentación</h2>
         <div class="pdf-container">
             <embed src="assets/proyecto/proyecto_final.pdf" type="application/pdf">
-        </div>
+        </div><br>
+
+        <h2>Videos del funcionamiento de los sensores</h2>
+        <h3>Cámaras ESP32CAM</h3>
+        <video width="640" height="360" controls>
+            <source src="assets/proyecto/camaras.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video><br>
+        <h3>Sensores de apertura</h3>
+        <h4>Para ventana</h4>
+        <video width="640" height="360" controls>
+            <source src="assets/proyecto/sensor_ventana.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video><br>
+        <h4>Para puerta</h4>
+        <video width="640" height="360" controls>
+            <source src="assets/proyecto/sensor_puerta.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video><br>
+        <h3>Timbre y sensor de temperatura</h3>
+        <video width="640" height="360" controls>
+            <source src="assets/proyecto/timbre.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video><br>
+        <h3>Sensor de zona segura - láser</h3>
+        <video width="640" height="360" controls>
+            <source src="assets/proyecto/laser.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video><br>
+        
+        <h2>API general de los sensores (sin incluir las camaras)</h2>
+        <p>Puedes consultar el link de nuestro repositorio en Github para ver nuestra API
+            en el siguiente <a href="https://github.com/yumnology/redes-practice" target="_blank">link</a>
+        </p>
+
+        <h2>API de las camaras</h2>
+        <p>Puedes consultar el link de nuestro repositorio en Github para ver nuestra API
+            en el siguiente <a href="https://github.com/ErickG09/api_camaras" target="_blank">link</a>
+        </p>
+
+        <h2>Links de códigos</h2>
+        <p>El código de las camaras ESP32CAM es el mismo, solo cambiamos en la línea 105 el nombre de la carpeta, 
+            a una camara le asignamos que mandara las fotos a la carpeta "Exterior" y la otra camara a la carpeta "Interior".
+        </p>
+        <img src="assets/proyecto/explicacion_camara.jpg" alt="" width="90%">
+        <h3>Códigos de Arduino IDE</h3>
+        <ul>
+            <li><a href="assets/proyecto/camra.ino" download="">Código de camaras ESP32CAM</a></li>
+            <li><a href="assets/proyecto/sensor_ventana_wifi.ino" download="">Código de sensor para ventana</a></li>
+            <li><a href="assets/proyecto/door-sensor.ino" download="">Código de sensor para puerta</a></li>
+            <li><a href="assets/proyecto/timbre_temperature.ino" download="">Código de timbre y sensor de temperatura</a></li>
+            <li><a href="assets/proyecto/laser.ino" download="">Código de sensor láser</a></li>
+        </ul>
     </div>
 
 
